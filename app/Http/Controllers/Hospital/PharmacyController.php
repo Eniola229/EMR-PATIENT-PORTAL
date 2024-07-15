@@ -14,7 +14,7 @@ class PharmacyController extends Controller
         {
 
             // Get the authenticated user's patient_id
-            $patientId = Auth::user()->patient_id;
+            $patientId = Auth::user()->id;
 
             $pharmacys = Pharmacy::where('patient_id', $patientId)
                           ->orderBy('created_at', 'desc')

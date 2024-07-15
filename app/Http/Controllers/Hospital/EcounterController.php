@@ -14,7 +14,7 @@ class EcounterController extends Controller
         {
 
             // Get the authenticated user's patient_id
-            $patientId = Auth::user()->patient_id;
+            $patientId = Auth::user()->id;
 
             $ecounters = Ecounter::where('patient_id', $patientId)
                           ->orderBy('created_at', 'desc')
