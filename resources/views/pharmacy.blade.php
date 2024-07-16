@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas --> 
-    <title>RHC EMR | Pharmacy Record</title>
+    <title>RHC EMR | My Prescription Record</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -126,7 +126,7 @@
                         <div class="row column_title">
                             <div class="col-md-12">
                                 <div class="page_title">
-                                    <h2>Your Pharmacy Record</h2>
+                                    <h2>My Prescription Record</h2>
                                 </div>
                             </div>
                         </div>

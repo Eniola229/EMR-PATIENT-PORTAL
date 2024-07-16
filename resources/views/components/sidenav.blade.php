@@ -34,13 +34,13 @@
                        <!--  <li><a href="">
                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M8.645 20.5a3.502 3.502 0 0 0 6.71 0zM3 19.5h18v-3l-2-3v-5a7 7 0 1 0-14 0v5l-2 3z"/></svg>
                             <span>Notification</span></a></li> -->
-                        <li><a href="{{ url('ecounter') }}"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em"
+                       <!--  <li><a href="{{ url('ecounter') }}"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em"
                                     height="1.5em" viewBox="0 0 36 36">
                                     <path fill="currentColor"
                                         d="m33 6.4l-3.7-3.7a1.71 1.71 0 0 0-2.36 0L23.65 6H6a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V11.76l3-3a1.67 1.67 0 0 0 0-2.36M18.83 20.13l-4.19.93l1-4.15l9.55-9.57l3.23 3.23ZM29.5 9.43L26.27 6.2l1.85-1.85l3.23 3.23Z"
                                         class="clr-i-solid clr-i-solid-path-1" />
                                     <path fill="none" d="M0 0h36v36H0z" />
-                                </svg> <span>Ecounter Notes </span></a></li>
+                                </svg> <span>My Medical Record </span></a></li> -->
                         <li><a href="{{ url('pharmacy') }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
                                     viewBox="0 0 24 24">
@@ -51,7 +51,7 @@
                                             d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
                                     </g>
                                 </svg>
-                                <span>Pharmacy</span></a></li>
+                                <span>My Prescription Record</span></a></li>
                         <li class="active">
                             <a href="#additional_page" data-toggle="collapse" aria-expanded="false"
                                 class="dropdown-toggle">
