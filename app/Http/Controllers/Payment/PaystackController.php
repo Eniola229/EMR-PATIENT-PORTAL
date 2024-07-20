@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Payment;
+use App\Models\User;
 
 
 class PaystackController extends Controller
@@ -41,11 +42,17 @@ class PaystackController extends Controller
             $obj->payment_for = "Online Medical Fee";
             $obj->amount = $response->data->amount / 100;
             $obj->currency = $response->data->currency;
-            $obj->status = "Completed";
+            $obj->status = "Success";
             $obj->payment_method = "Paystack";
             $obj->user_id = Auth::user()->id;
             $obj->save();
-            return redirect()->back()->with('message', 'Great! Payment Successful! You can now view your medical record.');
+
+            //Update user table
+            $user = Auth::user();
+            $user->Payment_Status = "PAID";
+            $user->save();
+
+            return redirect('/ecounter')->with('message', 'Great! Payment Successful! You can now view your medical records.');
         } else {
             return redirect()->back()->with('error', 'Payment failed. Please try again.');
         }

@@ -32,6 +32,7 @@ class User extends Authenticatable
         'by_who_email',
         'message_sent',
         'time_send',
+        'Payment_Status',
         'password',
     ];
 

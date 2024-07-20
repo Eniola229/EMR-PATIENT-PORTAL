@@ -146,6 +146,11 @@
 						            {{ session('status') }}
 						        </div>
 						    @endif
+                            @if (session('message'))
+                                <div class="alert alert-success" role="alert">
+                                    {{ session('message') }}
+                                </div>
+                            @endif
 					   <div class="col-12 mt-3">
 					   	@if($ecounters -> isNotEmpty())
 					    @foreach($ecounters as $ecounter)

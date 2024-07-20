@@ -15,7 +15,7 @@ class EcounterController extends Controller
         public function show()
         {
             if (Auth::user()->Payment_Status == NULL) {
-                return redirect('paymentpage')->with('error', 'You have to pay for your online medical portal to access your medical report.');
+                return redirect('paymentpage')->with('error', 'You have to pay for your online medical fee to access your medical report.');
             } elseif (Auth::user()->Payment_Status == "PAID") {
                 // Get the authenticated user's patient_id
                 $patientId = Auth::user()->id;
