@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->decimal('amount', 10, 2);
+            $table->string('amount', 10, 2);
             $table->string("currency");
             $table->string("payment_gateway")->default("paystack");
-            $table->decimal("transaction_id");
+            $table->string("transaction_id");
             $table->string("status");
             $table->string("payment_method");
             $table->string("payment_for")->default("online_medical_fee");
